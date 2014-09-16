@@ -1,4 +1,4 @@
-class Users < ActiveRecord::Base
+class User < ActiveRecord::Base
   belongs_to :group
   has_and_belongs_to_many :lunches
 end
