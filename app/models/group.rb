@@ -1,3 +1,3 @@
-class User < ActiveRecord::Base
-    has_many :projects
+class Group < ActiveRecord::Base
+  has_many :users
 end

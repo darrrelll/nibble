@@ -1,12 +1,10 @@
-class CreateProjects < ActiveRecord::Migration
+class CreateLunches < ActiveRecord::Migration
   def change
-    create_table :projects do |t|
-      t.references :user, index: true
+    create_table :lunches do |t|
       t.string :name
-      t.text :description
-      t.text :url
-      t.string :difficulty_rating
-
+      t.datetime :proposed_date
+      t.string :location
+      t.string :google_map_link
       t.timestamps
     end
   end
