@@ -1,6 +1,5 @@
 class CreateUsersLunches < ActiveRecord::Migration
   def change
-    create_table :users_lunches do |t|
-    end
+    create_join_table :festivals, :artists 
   end
 end
