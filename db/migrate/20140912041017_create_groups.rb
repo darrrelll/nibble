@@ -1,9 +1,8 @@
-class CreateTickets < ActiveRecord::Migration
+class CreateGroups < ActiveRecord::Migration
   def change
-    create_table :tickets do |t|
-    	t.string :type
-    	t.integer :difficulty
-    	t.boolean :complete, default: false
+    create_table :groups do |t|
+    	t.string :section_number
+    	t.string :name
     	t.timestamps
     end
   end
