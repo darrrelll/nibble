@@ -1,3 +1,3 @@
-class Ticket < ActiveRecord::Base
-	belongs_to :project
+class Lunch < ActiveRecord::Base
+	has_and_belongs_to_many :users
 end
