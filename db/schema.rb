@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 20140916025911) do
   end
 
   create_table "lunches", force: true do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "proposed_date"
-    t.string   "location"
-    t.string   "google_map_link"
+    t.text     "location"
+    t.text     "google_map"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
