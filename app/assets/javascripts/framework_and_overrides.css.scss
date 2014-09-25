@@ -1,0 +1,111 @@
+// import the CSS framework
+@import "foundation";
+@import "foundation/components/buttons";
+
+#new_questions_comment_form {
+  margin: 5px 60px 5px 5px;
+  padding: 10px;
+}
+
+.navbar {
+  padding-top: 20px;
+  height: 90px;
+  background-image: url('https://i.imgur.com/TKurs1H.jpg');
+  background-attachment: repeat;
+  background-position: center;
+  background-size: 20%;
+  text-shadow: 1px 1px #000;
+  }
+
+.panel small-centered {
+  position: relative;
+}
+
+#name{
+  position: absolute;
+  left: 120px;
+  top: 2px;
+}
+
+#twitter {
+  position: absolute;
+  left: 120px;
+  top: 25px;
+  color: grey;
+}
+
+.navbar a {
+  font-size: 1em;
+  }
+
+.navbar-brand a {
+  color: #eae6fe;
+  }
+
+.navbar-brand a:hover {
+  color: #8f84ce;
+  text-decoration: none;
+  }
+
+// override for the 'Home' navigation link
+.top-bar .name {
+  font-size: rem-calc(13);
+  line-height: 45px;
+
+    a {
+    font-weight: normal;
+    color: white;
+    padding: 0 15px;
+    }
+  }
+
+@mixin twelve-columns {
+  @extend .small-12;
+  @extend .columns;
+  }
+
+@mixin six-columns-centered {
+  @extend .small-6;
+  @extend .columns;
+  @extend .text-center;
+  }
+
+.column {
+  @include six-columns-centered;
+  }
+
+.form {
+  @include grid-column(6);
+  }
+
+.form-centered {
+  @include six-columns-centered;
+  }
+
+.submit {
+  @extend .button;
+  @extend .radius;
+  }
+
+main {
+  @include twelve-columns;
+  // background-image: url('https://i.imgur.com/VvdPaS5.png');
+  background-attachment: repeat;
+  background-position: center;
+  background-size: 20%;
+}
+
+.application-name {
+  font-size: 2em;
+  font-color: white;
+  font-family: 'IM Fell French Canon SC', 'serif';
+}
+
+section {
+  @extend .row;
+  margin-top: 20px;
+}
+
+.alert-box {
+  margin-top: 10px;
+}
