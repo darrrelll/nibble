@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC);
+@import url(http://fonts.googleapis.com/css?family=UnifrakturMaguntia);
+@import url(http://fonts.googleapis.com/css?family=Amarante|Cagliostro);
+@import "../../../vendor/assets/stylesheets/bootstrap/bootstrap.scss";
+
+body {
+  font-size: 12px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin: 4px;
+}
+
+.all_comments {
+  margin: 10px 50px;
+  padding: 5px 30px 15px 30px;
+  background-color:#eeeeee;
+  color:#000;
+}
+
+tr .comments {
+  margin: 10px 30px;
+  background-color: #bebebf;
+}
+
+.a-comment {
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 0.8em;
+}
+
+.pretty-purple {
+  box-shadow: 1px 1px 1px #888888;
+  border: 0px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #6f3faa;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+.small-button {
+  padding: 1px 3px;
+  font-size: 0.9em;
+  letter-spacing: 0.8px;
+}
+
+.small-grey {
+  font-size: 0.8em;
+  color: grey;
+}
+
+.disguised {
+  text-align:right;
+  padding: 5px;
+  font-size: 0.8em;
+  color: grey;
+  background-color: transparent;
+}
+
+.disguised:hover {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+a {
+  color: #6f3faa;
+}
+
+a:visited {
+  color: #fabf8d;
+}
+
+.text-li {
+  margin-top: 15px;
+  color: white;
+  line-height: 20px;
+}

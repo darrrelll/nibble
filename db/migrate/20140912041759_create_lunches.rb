@@ -1,10 +1,10 @@
 class CreateLunches < ActiveRecord::Migration
   def change
     create_table :lunches do |t|
-      t.string :name
+      t.text :name
       t.datetime :proposed_date
-      t.string :location
-      t.string :google_map_link
+      t.text :location
+      t.text :google_map
       t.timestamps
     end
   end

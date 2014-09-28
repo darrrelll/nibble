@@ -17,17 +17,17 @@ ActiveRecord::Schema.define(version: 20140916025911) do
   enable_extension "plpgsql"
 
   create_table "groups", force: true do |t|
-    t.string   "section_number"
+    t.string   "section"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "lunches", force: true do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "proposed_date"
-    t.string   "location"
-    t.string   "google_map_link"
+    t.text     "location"
+    t.text     "google_map"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,8 +38,9 @@ ActiveRecord::Schema.define(version: 20140916025911) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "oath_token"
-    t.string   "gh_username"
+    t.string   "name"
+    t.string   "gravatar_image_string"
+    t.integer  "group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
